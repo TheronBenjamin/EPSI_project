@@ -1,0 +1,97 @@
+.landing-page-overflow{
+    overflow: hidden;
+}
+.home-left{
+    background: linear-gradient(#ff8b25 100%);
+    width: 0vw;
+    //taille navabar 30px
+    height: calc(100vh - 30px);
+    display: flex;
+    align-items: center;
+    .home-left-title{
+        font-size: var(--h2-font-size);
+        font-weight: bold;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transform: rotate(-90deg);
+        text-shadow: var(--text-shadow);
+    }
+    .card{
+        position: absolute;
+        width: 265px;
+        height: 380px;
+        border-radius: 10px;
+        box-shadow: 0px 1px 2px #6e6e6e;
+        left: 0; 
+        right: 0; 
+        top: 0;
+        bottom: 0;
+        margin: auto; 
+        .login{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3rem;
+            h2{
+                margin-bottom: 1rem;
+                font-size: var(--h2-font-size);
+            }
+            img{
+                width: 200px;
+                height: 100%;
+            }
+            a{
+                font-size: .9rem;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: auto;
+                height: 35px;
+                width: 130px;
+                padding-top: .4rem;
+                margin-top: 2.5rem;
+                border: none;
+                border-radius: 4px;
+                color: white;
+                background-color: #146391;
+                border: 2px solid #146391;
+                transition: all .4s;
+                cursor: pointer;
+                &:hover{
+                    color: rgb(255, 255, 255);
+                    background-color: #1f80b8;
+                    border: 2px solid #1f80b8;
+                }
+            }
+        }
+    }
+    .home-card-background{
+        background: linear-gradient(1900deg, #146391 10%, #ffffff 10%); 
+    }
+
+}
+
+.home-right{
+    position: absolute;
+    background: linear-gradient(#146391 100%);
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    left: 100vw;
+    top: 0;
+    .home-right-title{
+        font-size: var(--h2-font-size);
+        font-weight: bold;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-shadow: var(--text-shadow);
+    }
+}
+
+
+
+

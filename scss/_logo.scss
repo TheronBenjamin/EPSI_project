@@ -1,0 +1,26 @@
+h2{
+    text-align: center;
+    .login-logo{
+        width: 80px;
+        height: 80px;
+        border-left: 20px solid #ff8b25;
+        border-right: 20px solid #146391;
+        border-radius: 50%;  
+        margin-top: 1rem;
+        margin-bottom: 1.2rem;
+        .logo-blue-bar{
+            font-size: 4.5rem;
+            color: #146391;
+            margin-right: -.5rem;
+        }
+        .logo-orange-bar{
+            font-size: 4.5rem;
+            color: #ff8b25;
+            text-shadow: 2px 0px 1px #ff8b25;
+        }
+    }
+}
+
+
+
+

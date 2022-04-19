@@ -1,0 +1,20 @@
+@import '_root.scss';
+@import '_connection.scss';
+@import '_homePage.scss';
+@import '_logo.scss';
+@import '_navigationBar.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--body-font);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+

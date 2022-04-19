@@ -1,0 +1,64 @@
+// Calquer sur la homepage
+.connection-page{
+    .home-left{
+        width: 50vw;
+        .card{
+            .login{
+                h2{
+                    margin-top: -2rem;
+                    margin-bottom: .5rem;
+                }
+                label{
+                    font-size: .9rem;
+                    margin-left: 2rem;
+                    margin-right: auto;
+                    margin-bottom: .3rem;
+                }
+                input{
+                    border-radius: 3px;
+                    border: 1px solid #917214;
+                    height: 25px;
+                    width: 200px;
+                    padding-left: .3rem;
+                    outline-color: #fdcd3b;
+                }
+                .login-button{
+                    margin-top: 2.2rem;
+                    height: 35px;
+                    width: 230px;
+                    font-size: .85rem;
+                    font-weight: bold;
+                    text-align: center;
+                    margin-bottom: auto;
+                    width: 130px;
+                    cursor: pointer;
+                    background-color: #146391;
+                    border: 2px solid #146391;
+                    border-radius: 4px;
+                    transition: all .4s;
+                    color: white;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #1f80b8;
+                        border: 2px solid #1f80b8;
+                    }
+
+                }
+            }
+                
+        }
+    }
+    .home-right{
+    left: 50vw;
+    width: 50vw;
+    //     background: 
+    //         linear-gradient(to top, transparent, rgba(6, 2, 21, .5) 100%),
+    //         #1b89c9 repeating-linear-gradient(45deg, transparent, transparent 35px,
+    //         #146391 35px, 
+    //         #ff8b25 70px);
+    //         display:flex;
+        .home-right-title{
+            text-align: center;
+        }
+    }  
+}

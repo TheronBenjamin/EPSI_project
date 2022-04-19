@@ -1,0 +1,29 @@
+.navbar{
+    background-color: rgb(255, 255, 243);
+    height: 30px;
+    .navbar-logo{
+        position: absolute;
+        width: 17px;
+        height: 17px;
+        border-left: 5px solid #ff8b25;
+        border-right: 5px solid #146391;
+        border-radius: 50%;  
+        margin-top: .4rem;
+        margin-left: .5rem;
+        margin-bottom: 1.2rem;
+    }
+    a{
+        display: block;
+        max-width: 90px;   
+        .navbar-logo-title{
+            max-width: 90px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding-top: .3rem;
+            margin-left: 13px;
+            span{
+                opacity: 0;
+            }
+        }
+    }
+}
