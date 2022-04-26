@@ -1,6 +1,9 @@
 .navbar{
     background-color: rgb(255, 255, 243);
     height: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: .5rem;
     .navbar-logo{
         position: absolute;
         width: 17px;
@@ -8,7 +11,7 @@
         border-left: 5px solid #ff8b25;
         border-right: 5px solid #146391;
         border-radius: 50%;  
-        margin-top: .4rem;
+        margin-top: .3rem;
         margin-left: .5rem;
         margin-bottom: 1.2rem;
     }
@@ -19,11 +22,23 @@
             max-width: 90px;
             font-size: 1.2rem;
             font-weight: 500;
-            padding-top: .3rem;
+            padding-top: .2rem;
             margin-left: 13px;
             span{
                 opacity: 0;
             }
+        }
+    }
+    .user{
+        display: flex;
+        align-items: center;
+        i{
+            margin-right: .5rem;
+            color:#ff8b25;
+        }
+        .username{
+            font-weight: 400;
+            color: #146391;
         }
     }
 }

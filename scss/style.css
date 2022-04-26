@@ -219,6 +219,13 @@ h2 .login-logo .logo-orange-bar {
 .navbar {
   background-color: #fffff3;
   height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: .5rem;
 }
 
 .navbar .navbar-logo {
@@ -228,7 +235,7 @@ h2 .login-logo .logo-orange-bar {
   border-left: 5px solid #ff8b25;
   border-right: 5px solid #146391;
   border-radius: 50%;
-  margin-top: .4rem;
+  margin-top: .3rem;
   margin-left: .5rem;
   margin-bottom: 1.2rem;
 }
@@ -242,12 +249,31 @@ h2 .login-logo .logo-orange-bar {
   max-width: 90px;
   font-size: 1.2rem;
   font-weight: 500;
-  padding-top: .3rem;
+  padding-top: .2rem;
   margin-left: 13px;
 }
 
 .navbar a .navbar-logo-title span {
   opacity: 0;
+}
+
+.navbar .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .user i {
+  margin-right: .5rem;
+  color: #ff8b25;
+}
+
+.navbar .user .username {
+  font-weight: 400;
+  color: #146391;
 }
 
 * {
