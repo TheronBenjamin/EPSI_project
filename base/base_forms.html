@@ -21,5 +21,52 @@
         </div>
     </nav>
     <!-- End composant navigation -->
+    <!-- Début Formulaire Nouveau CLient -->
+    <section class="newClientForm">
+        <h1 class="formTitle">Nouveau Client</h1>
+        <form class="submit" method="POST" action="#">
+            <div class="form-bloc">
+                <div class="formClientLastName">
+                    <label for="clientLastName">Nom du client</label>
+                    <input placeholder="Saisir le nom du client" type="text" name="clientLastName" required>
+                </div>
+
+                <div class="formClientFirstName">
+                    <label for="clientFirstName">Prénom du Client</label>
+                    <input placeholder="Saisir le prénom du Client" type="text" name="clientFirstName" required>
+                </div>
+
+                <div class="formSociety">
+                    <label for="society">Société</label>
+                    <input placeholder="Saisir la société" type="text" name="society">
+                </div>
+
+                <div class="formPortablePhone">
+                    <label for="portablePhone">Téléphone portable</label>
+                    <input placeholder="Saisir le numéro de télephone" type="tel" name="portablePhone">
+                </div>
+
+                <div class="formFixPhone">
+                    <label for="fixPhone">Téléphone fixe</label>
+                    <input placeholder="Saisir le numéro de téléphone" type="tel" name="fixPhone">
+                </div>
+            </div>
+            <div class="form-bloc">
+                <div class="formRadio">
+                    <input type="radio" id="active" name="active" value="active">
+                    <label for="active">Actif</label>
+                    <input type="radio" id="inactive" name="active" value="inactive">
+                    <label for="inactive">Inactif</label>
+                </div>
+
+                <div class="formButton">
+                    <button id="addButton" type="submit"><a href="#">Ajouter</a></button>
+                    <button id="cancel" type="button"><a href="#">Annuler</a></button>
+                </div>
+            </div>
+        </form>
+        <!-- End Formulaire Nouveau Client -->
+
+    </section>
 </body>
 </html>

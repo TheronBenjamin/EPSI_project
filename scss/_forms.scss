@@ -1,0 +1,45 @@
+section{
+  display: flex;
+  flex-direction: column;
+  .formTitle {
+    display: flex;
+  }
+  .submit{
+    display: flex;
+    flex-direction: column;
+
+    .form-bloc {
+      display: flex;
+      flex-direction: column;
+
+      .formClientLastName {
+        display: flex;
+      }
+
+      .formClientFirstName {
+        display: flex;
+      }
+
+      .formSociety {
+        display: flex;
+      }
+
+      .formPortablePhone {
+        display: flex;
+      }
+
+      .formFixPhone {
+        display: flex;
+      }
+
+      .formRadio {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .formButton {
+        display: flex;
+      }
+    }
+  }
+}
