@@ -1,8 +1,9 @@
-section{
+.newClientForm{
   display: flex;
   flex-direction: column;
   .formTitle {
     display: flex;
+    color: #1f80b8;
   }
   .submit{
     display: flex;

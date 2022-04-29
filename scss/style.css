@@ -218,6 +218,45 @@ h2 .login-logo .logo-orange-bar {
   color: #146391;
 }
 
+.newClientForm {
+  display: flex;
+  flex-direction: column;
+}
+.newClientForm .formTitle {
+  display: flex;
+  color: #1f80b8;
+}
+.newClientForm .submit {
+  display: flex;
+  flex-direction: column;
+}
+.newClientForm .submit .form-bloc {
+  display: flex;
+  flex-direction: column;
+}
+.newClientForm .submit .form-bloc .formClientLastName {
+  display: flex;
+}
+.newClientForm .submit .form-bloc .formClientFirstName {
+  display: flex;
+}
+.newClientForm .submit .form-bloc .formSociety {
+  display: flex;
+}
+.newClientForm .submit .form-bloc .formPortablePhone {
+  display: flex;
+}
+.newClientForm .submit .form-bloc .formFixPhone {
+  display: flex;
+}
+.newClientForm .submit .form-bloc .formRadio {
+  display: flex;
+  flex-direction: row;
+}
+.newClientForm .submit .form-bloc .formButton {
+  display: flex;
+}
+
 * {
   margin: 0;
   padding: 0;
