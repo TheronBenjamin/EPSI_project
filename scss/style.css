@@ -122,7 +122,7 @@
   cursor: pointer;
 }
 .home-left .card .login a:hover {
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: #1f80b8;
   border: 2px solid #1f80b8;
 }
@@ -174,7 +174,7 @@ h2 .login-logo .logo-orange-bar {
 }
 
 .navbar {
-  background-color: #fffff3;
+  background-color: rgb(255, 255, 243);
   height: 30px;
   display: flex;
   justify-content: space-between;
@@ -255,6 +255,36 @@ h2 .login-logo .logo-orange-bar {
 }
 .newClientForm .submit .form-bloc .formButton {
   display: flex;
+}
+
+table {
+  border-bottom: 4px solid #146391;
+  margin: 100px auto;
+  border-radius: 15px 15px 0 0;
+  background-color: #146391;
+}
+
+thead {
+  background-color: #146391;
+}
+thead tr th {
+  padding: 1rem;
+  border-radius: 15px 15px 0 0;
+  color: #fff;
+  font-weight: 400;
+}
+
+tbody tr td {
+  padding: 1rem;
+  font-weight: lighter;
+  font-size: 14px;
+  text-align: center;
+}
+tbody tr:nth-child(even) {
+  background: #CCC;
+}
+tbody tr:nth-child(odd) {
+  background: #fff;
 }
 
 * {

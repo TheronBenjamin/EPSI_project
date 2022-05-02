@@ -1,0 +1,33 @@
+table {
+  border-bottom: 4px solid #146391;
+  margin: 100px auto;
+  border-radius: 15px 15px 0 0;
+  background-color: #146391;
+}
+thead {
+  background-color: #146391;
+  tr {
+    th {
+      padding: 1rem;
+      border-radius: 15px 15px 0 0;
+      color: #fff;
+      font-weight: 400;
+    }
+  }
+}
+tbody {
+  tr {
+    td {
+      padding: 1rem;
+      font-weight: lighter;
+      font-size: 14px;
+      text-align: center;
+    }
+    &:nth-child(even) {
+      background: #CCC;
+    }
+    &:nth-child(odd) {
+      background: #fff;
+    }
+  }
+}
