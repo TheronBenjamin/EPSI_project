@@ -62,7 +62,7 @@
 }
 
 .home-left {
-  background: linear-gradient(#ff8b25 100%);
+  background: #ff8b25 100%;
   width: 0vw;
   height: calc(100vh - 30px);
   display: flex;
@@ -122,7 +122,7 @@
   cursor: pointer;
 }
 .home-left .card .login a:hover {
-  color: rgb(255, 255, 255);
+  color: white;
   background-color: #1f80b8;
   border: 2px solid #1f80b8;
 }
@@ -132,7 +132,7 @@
 
 .home-right {
   position: absolute;
-  background: linear-gradient(#146391 100%);
+  background: #146391;
   display: flex;
   align-items: center;
   width: 100vw;
@@ -174,7 +174,7 @@ h2 .login-logo .logo-orange-bar {
 }
 
 .navbar {
-  background-color: rgb(255, 255, 243);
+  background-color: #fffff3;
   height: 30px;
   display: flex;
   justify-content: space-between;
