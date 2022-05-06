@@ -2,10 +2,10 @@
     overflow: hidden;
 }
 .home-left{
-    background: #ff8b25 100%;
+    background: var(--orange) 100%;
     width: 0vw;
     //taille navabar 30px
-    height: calc(100vh - 30px);
+    height: 100vh;
     display: flex;
     align-items: center;
     .home-left-title{
@@ -22,7 +22,7 @@
         width: 265px;
         height: 380px;
         border-radius: 10px;
-        box-shadow: 0px 1px 2px #6e6e6e;
+        box-shadow: 0px 1px 2px var(--grey);
         left: 0; 
         right: 0; 
         top: 0;
@@ -53,28 +53,28 @@
                 margin-top: 2.5rem;
                 border: none;
                 border-radius: 4px;
-                color: white;
-                background-color: #146391;
-                border: 2px solid #146391;
+                color: var(--white);
+                background-color: var(--blue);
+                border: 2px solid var(--blue);
                 transition: all .4s;
                 cursor: pointer;
                 &:hover{
-                    color: rgb(255, 255, 255);
-                    background-color: #1f80b8;
-                    border: 2px solid #1f80b8;
+                    color: var(--white);
+                    background-color: var(--hover-blue);
+                    border: 2px solid var(--hover-blue);
                 }
             }
         }
     }
     .home-card-background{
-        background: linear-gradient(1900deg, #146391 10%, #ffffff 10%); 
+        background: linear-gradient(1900deg, var(--blue) 10%, var(--white) 10%);
     }
 
 }
 
 .home-right{
     position: absolute;
-    background: #146391;
+    background: var(--blue);
     display: flex;
     align-items: center;
     width: 100vw;

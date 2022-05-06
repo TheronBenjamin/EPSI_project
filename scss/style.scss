@@ -5,12 +5,18 @@
 @import '_navigationBar.scss';
 @import '_forms.scss';
 @import '_table.scss';
+@import "_card.scss";
+@import '_menu.scss';
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: var(--body-font);
+}
+
+body{
+    background-color: #081738;
 }
 
 a{

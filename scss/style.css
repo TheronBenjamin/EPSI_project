@@ -4,7 +4,20 @@
   --body-font:"Roboto", sans-serif;
   --h1-font-size: 2.3rem;
   --h2-font-size: 2.2rem;
-  --text-shadow: 1px 1px 1px rgba(255,255,255,.5) ;
+  --text-shadow: 1px 1px 1px rgba(255,255,255,.5);
+  --white: white;
+  --grey: #6e6e6e;
+  --table-grey: #CCC;
+  --beige: rgb(255, 255, 243);
+  --black: black;
+  --blue: #146391;
+  --hover-blue: #1f80b8;
+  --neutral-blue: rgb(25, 109, 140);
+  --dark-blue: #081738;
+  --extreme-dark-blue: rgb(4, 13, 33);
+  --orange: #ff8b25;
+  --orange-neutral: rgb(255, 153, 66);
+  --flashy-orange: #e58910;
 }
 
 .connection-page .home-left {
@@ -22,32 +35,31 @@
 }
 .connection-page .home-left .card .login input {
   border-radius: 3px;
-  border: 1px solid #917214;
+  border: 1px solid var(--black);
   height: 25px;
   width: 200px;
   padding-left: 0.3rem;
-  outline-color: #fdcd3b;
+  outline-color: var(--blue);
 }
 .connection-page .home-left .card .login .login-button {
   margin-top: 2.2rem;
   height: 35px;
-  width: 230px;
   font-size: 0.85rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: auto;
   width: 130px;
   cursor: pointer;
-  background-color: #146391;
-  border: 2px solid #146391;
+  background-color: var(--blue);
+  border: 2px solid var(--blue);
   border-radius: 4px;
   transition: all 0.4s;
-  color: white;
-  cursor: pointer;
+  outline-color: var(--extreme-dark-blue);
+  color: var(--white);
 }
 .connection-page .home-left .card .login .login-button:hover {
-  background-color: #1f80b8;
-  border: 2px solid #1f80b8;
+  background-color: var(--hover-blue);
+  border: 2px solid var(--hover-blue);
 }
 .connection-page .home-right {
   left: 50vw;
@@ -62,9 +74,9 @@
 }
 
 .home-left {
-  background: #ff8b25 100%;
+  background: var(--orange) 100%;
   width: 0vw;
-  height: calc(100vh - 30px);
+  height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -82,7 +94,7 @@
   width: 265px;
   height: 380px;
   border-radius: 10px;
-  box-shadow: 0px 1px 2px #6e6e6e;
+  box-shadow: 0px 1px 2px var(--grey);
   left: 0;
   right: 0;
   top: 0;
@@ -115,24 +127,24 @@
   margin-top: 2.5rem;
   border: none;
   border-radius: 4px;
-  color: white;
-  background-color: #146391;
-  border: 2px solid #146391;
+  color: var(--white);
+  background-color: var(--blue);
+  border: 2px solid var(--blue);
   transition: all 0.4s;
   cursor: pointer;
 }
 .home-left .card .login a:hover {
-  color: white;
-  background-color: #1f80b8;
-  border: 2px solid #1f80b8;
+  color: var(--white);
+  background-color: var(--hover-blue);
+  border: 2px solid var(--hover-blue);
 }
 .home-left .home-card-background {
-  background: linear-gradient(1900deg, #146391 10%, #ffffff 10%);
+  background: linear-gradient(1900deg, var(--blue) 10%, var(--white) 10%);
 }
 
 .home-right {
   position: absolute;
-  background: #146391;
+  background: var(--blue);
   display: flex;
   align-items: center;
   width: 100vw;
@@ -156,36 +168,39 @@ h2 {
 h2 .login-logo {
   width: 80px;
   height: 80px;
-  border-left: 20px solid #ff8b25;
-  border-right: 20px solid #146391;
+  border-left: 20px solid var(--orange);
+  border-right: 20px solid var(--blue);
   border-radius: 50%;
   margin-top: 1rem;
   margin-bottom: 1.2rem;
 }
 h2 .login-logo .logo-blue-bar {
   font-size: 4.5rem;
-  color: #146391;
+  color: var(--blue);
   margin-right: -0.5rem;
 }
 h2 .login-logo .logo-orange-bar {
   font-size: 4.5rem;
-  color: #ff8b25;
-  text-shadow: 2px 0px 1px #ff8b25;
+  color: var(--orange);
+  text-shadow: 2px 0px 1px var(--orange);
 }
 
 .navbar {
-  background-color: #fffff3;
+  position: fixed;
+  top: 0;
   height: 30px;
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
   padding-right: 0.5rem;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--grey);
+  z-index: 1;
 }
 .navbar .navbar-logo {
   position: absolute;
   width: 17px;
   height: 17px;
-  border-left: 5px solid #ff8b25;
-  border-right: 5px solid #146391;
+  border-left: 5px solid var(--orange);
+  border-right: 5px solid var(--blue);
   border-radius: 50%;
   margin-top: 0.3rem;
   margin-left: 0.5rem;
@@ -204,18 +219,6 @@ h2 .login-logo .logo-orange-bar {
 }
 .navbar a .navbar-logo-title span {
   opacity: 0;
-}
-.navbar .user {
-  display: flex;
-  align-items: center;
-}
-.navbar .user i {
-  margin-right: 0.5rem;
-  color: #ff8b25;
-}
-.navbar .user .username {
-  font-weight: 400;
-  color: #146391;
 }
 
 .newClientForm {
@@ -281,10 +284,108 @@ tbody tr td {
   text-align: center;
 }
 tbody tr:nth-child(even) {
-  background: #CCC;
+  background: var(--table-grey);
 }
 tbody tr:nth-child(odd) {
-  background: #fff;
+  background: var(--white);
+}
+
+.cards-container {
+  margin: auto;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  padding-top: 80px;
+}
+.cards-container .card {
+  width: 220px;
+  height: 80px;
+  display: block;
+  border: 2px ridge var(--neutral-blue);
+  border-radius: 6px;
+  background-color: var(--extreme-dark-blue);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+.cards-container .card:hover {
+  transform: translatey(-3px);
+  border: 2px ridge var(--flashy-orange);
+  box-shadow: 1px 5px 22px var(--black);
+}
+.cards-container .card p {
+  color: var(--white);
+  text-align: center;
+}
+.cards-container .card p:first-child {
+  margin-top: 0.5rem;
+}
+
+.aside {
+  position: fixed;
+  top: 30px;
+  left: 0;
+  height: 100%;
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 0.7rem;
+  text-align: center;
+  padding: 1.2rem 0rem;
+  z-index: 2;
+  width: 85px;
+}
+.aside a {
+  cursor: pointer;
+  color: var(--white);
+  z-index: 5;
+}
+.aside a:hover i {
+  background: var(--dark-blue);
+  color: var(--orange);
+}
+.aside a:hover p {
+  background: var(--dark-blue);
+  color: var(--white);
+  text-shadow: 0px 0px 0px var(--dark-blue);
+}
+.aside a i {
+  padding: 1.9rem 2.3rem;
+  margin-bottom: 0.2rem;
+  font-size: 1.5rem;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  color: var(--dark-blue);
+  transition: color 0.1s, background-color 0.1s, transform 0.4s;
+}
+.aside a p {
+  padding-bottom: 1rem;
+  margin-top: -0.8rem;
+  font-size: 0.7rem;
+  color: var(--white);
+  text-shadow: 1px 1px 2px var(--dark-blue);
+  transition: color 0.1s, background-color 0.1s, transform 0.4s;
+}
+.aside .bar-link:nth-of-type(1) {
+  margin-top: -1.2rem;
+}
+
+.active {
+  background-color: var(--dark-blue);
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.active a p {
+  color: var(--beige);
+  text-shadow: 0px 0px 0px var(--white);
+}
+
+.active a i {
+  color: var(--orange-neutral);
 }
 
 * {
@@ -292,6 +393,10 @@ tbody tr:nth-child(odd) {
   padding: 0;
   box-sizing: border-box;
   font-family: var(--body-font);
+}
+
+body {
+  background-color: #081738;
 }
 
 a {

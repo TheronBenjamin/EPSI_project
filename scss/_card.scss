@@ -1,0 +1,30 @@
+.cards-container{
+  margin:auto;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  padding-top: 80px;
+  .card{
+    width: 220px;
+    height: 80px;
+    display: block;
+    border: 2px ridge var(--neutral-blue);
+    border-radius: 6px;
+    background-color: var(--extreme-dark-blue);
+    transition: transform .3s;
+    cursor: pointer;
+    &:hover{
+      transform: translatey(-3px);
+      border: 2px ridge var(--flashy-orange);
+      box-shadow: 1px 5px 22px var(--black);
+    }
+    p{
+      &:first-child{
+        margin-top: .5rem;
+      }
+      color: var(--white);
+      text-align: center;
+    }
+  }
+}

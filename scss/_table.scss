@@ -24,10 +24,10 @@ tbody {
       text-align: center;
     }
     &:nth-child(even) {
-      background: #CCC;
+      background: var(--table-grey);
     }
     &:nth-child(odd) {
-      background: #fff;
+      background: var(--white);
     }
   }
 }

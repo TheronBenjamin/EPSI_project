@@ -1,0 +1,68 @@
+.aside{
+    position: fixed;
+    top: 30px;
+    left: 0;
+    height: 100%;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: .7rem;
+    text-align: center;
+    padding: 1.2rem 0rem;
+    z-index: 2;
+    width: 85px;
+    a{
+        cursor: pointer;
+        color: var(--white);
+        z-index: 5;
+        &:hover{
+          i {
+              background: var(--dark-blue);
+              color: var(--orange);
+          }
+            p {
+              background: var(--dark-blue);
+              color: var(--white);
+              text-shadow: 0px 0px 0px var(--dark-blue);
+            }
+          }
+        i{
+          padding: 1.9rem 2.3rem;
+          margin-bottom: .2rem;
+          font-size: 1.5rem;
+          height: 50px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          z-index: 4;
+          color: var(--dark-blue);
+          transition: color .1s, background-color .1s, transform .4s;
+        }
+        p{
+          padding-bottom: 1rem;
+          margin-top: -.8rem;
+          font-size: .7rem;
+          color: var(--white);
+          text-shadow: 1px 1px 2px var(--dark-blue);
+          transition: color .1s, background-color .1s, transform .4s;
+        }
+    }
+    .bar-link:nth-of-type(1){
+      margin-top: -1.2rem;
+    }
+}
+
+.active{
+  background-color: var(--dark-blue);
+  margin: 0;
+  transition: all .3s ease-in-out;
+}
+
+.active a p{
+  color: var(--beige);
+  text-shadow: 0px 0px 0px var(--white);
+}
+
+.active a i{
+  color: var(--orange-neutral);
+}

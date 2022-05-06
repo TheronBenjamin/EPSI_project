@@ -3,20 +3,20 @@ h2{
     .login-logo{
         width: 80px;
         height: 80px;
-        border-left: 20px solid #ff8b25;
-        border-right: 20px solid #146391;
+        border-left: 20px solid var(--orange);
+        border-right: 20px solid var(--blue);
         border-radius: 50%;  
         margin-top: 1rem;
         margin-bottom: 1.2rem;
         .logo-blue-bar{
             font-size: 4.5rem;
-            color: #146391;
+            color: var(--blue);
             margin-right: -.5rem;
         }
         .logo-orange-bar{
             font-size: 4.5rem;
-            color: #ff8b25;
-            text-shadow: 2px 0px 1px #ff8b25;
+            color: var(--orange);
+            text-shadow: 2px 0px 1px var(--orange);
         }
     }
 }
