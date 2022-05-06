@@ -3,7 +3,8 @@
     top: 30px;
     left: 0;
     height: 100%;
-    background-color: var(--blue);
+    background-color: #062f5e;
+    //background-color: var(--blue);
     color: var(--white);
     font-size: .7rem;
     text-align: center;
@@ -35,7 +36,7 @@
           justify-content: center;
           align-items: center;
           z-index: 4;
-          color: var(--dark-blue);
+          color: var(--flashy-orange);
           transition: color .1s, background-color .1s, transform .4s;
         }
         p{

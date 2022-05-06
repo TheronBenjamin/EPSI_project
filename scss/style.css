@@ -192,7 +192,6 @@ h2 .login-logo .logo-orange-bar {
   width: 100%;
   padding-right: 0.5rem;
   background-color: var(--white);
-  border-bottom: 1px solid var(--grey);
   z-index: 1;
 }
 .navbar .navbar-logo {
@@ -299,7 +298,7 @@ tbody tr:nth-child(odd) {
   padding-top: 80px;
 }
 .cards-container .card {
-  width: 300px;
+  width: 310px;
   height: 120px;
   display: block;
   border: 2px ridge var(--neutral-blue);
@@ -309,7 +308,7 @@ tbody tr:nth-child(odd) {
 }
 .cards-container .card:hover {
   transform: translatey(-3px);
-  border: 2px ridge #00ff80;
+  border: 2px ridge #06f877;
   box-shadow: 1px 5px 22px var(--black);
 }
 .cards-container .card i {
@@ -324,35 +323,55 @@ tbody tr:nth-child(odd) {
 .cards-container .card .contact-header {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 0.8rem 1.2rem;
   color: #081738;
+  font-size: 0.95rem;
 }
 .cards-container .card .contact-header .contact-active, .cards-container .card .contact-header .contact-inactif {
-  background-color: #2fff78;
-  font-weight: 500;
-  color: var(--extreme-dark-blue);
-  font-size: 0.85em;
+  background-color: #0b8804;
+  font-weight: 400;
+  color: var(--white);
+  font-size: 0.8rem;
   margin-top: -0.1rem;
-  padding: 0.1rem 1rem;
-  border-radius: 3px;
+  padding: 0.2rem 0.7rem;
+  border-radius: 20px;
 }
 .cards-container .card .contact-header .contact-inactif {
-  background-color: #ff0000;
+  background-color: #a40303;
 }
 
-.contact-footer {
-  margin-left: 1rem;
-  margin-top: -0.5rem;
+.cards-container .card .contact-footer {
+  margin-left: 1.2rem;
   font-weight: 300;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
+}
+.cards-container .card .contact-footer p {
+  margin-bottom: 0.3rem;
+}
+.cards-container .card .contact-footer p:first-child {
+  margin-top: -0.6rem;
+  margin-bottom: 0.8rem;
+}
+.cards-container .card .contact-footer p i {
+  font-size: 0.7rem;
+  margin-right: 0.8rem;
+  color: #0fcc3c;
 }
 
+@keyframes test {
+  0% {
+    background-color: var(--dark-blue);
+  }
+  100% {
+    background-color: #0b8804;
+  }
+}
 .aside {
   position: fixed;
   top: 30px;
   left: 0;
   height: 100%;
-  background-color: var(--blue);
+  background-color: #062f5e;
   color: var(--white);
   font-size: 0.7rem;
   text-align: center;
@@ -384,7 +403,7 @@ tbody tr:nth-child(odd) {
   justify-content: center;
   align-items: center;
   z-index: 4;
-  color: var(--dark-blue);
+  color: var(--flashy-orange);
   transition: color 0.1s, background-color 0.1s, transform 0.4s;
 }
 .aside a p {
