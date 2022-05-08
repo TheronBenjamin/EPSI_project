@@ -97,17 +97,28 @@
                 </div>
             </div>
             <div class="form-bloc">
-                <div class="formRadio">
-                    <input type="radio" id="active" name="active" value="active">
-                    <label for="active">Actif</label>
-                    <input type="radio" id="inactive" name="active" value="inactive">
-                    <label for="inactive">Inactif</label>
+                <fieldset class="form-line">
+                    <legend>Statut</legend>
+                    <div class="formRadio">
+                        <div class="radioOption">
+                            <input type="radio" id="active" name="statut" value="active">
+                            <label for="active">Actif</label>
+                        </div>
+                        <div class="radioOption">
+                            <input type="radio" id="inactive" name="statut" value="inactive">
+                            <label for="inactive">Inactif</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="formNotes">
+                    <label for="notes">Notes</label>
+                    <textarea id="notes" name="notes"></textarea>
                 </div>
+            </div>
 
-                <div class="formButton">
-                    <button id="addButton" type="submit"><a href="#">Ajouter</a></button>
-                    <button id="cancel" type="button"><a href="#">Annuler</a></button>
-                </div>
+            <div class="formButton">
+                <button id="addButton" type="submit"><a href="#">Ajouter</a></button>
+                <button id="cancel" type="button"><a href="#">Annuler</a></button>
             </div>
         </form>
         <!-- End Formulaire Nouveau Client -->

@@ -1,46 +1,133 @@
-.newClientForm{
+
+.newClientForm {
+  background-color: #032f5e;
+  margin-left: 150px;
+  margin-top: 70px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
+  flex: auto;
+  max-width: 650px;
+
   .formTitle {
-    display: flex;
-    color: #1f80b8;
+    color: var(--orange);
+    width: 100%;
+    text-align: start;
+    margin: 10px 0 20px;
   }
-  .submit{
+
+  .formTitle span {
+    background: #fff;
+    padding: 0 10px;
+  }
+
+  .submit {
+    color: var(--orange);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
     .form-bloc {
       display: flex;
       flex-direction: column;
+      margin: 10px;
+      flex: 1;
+
+      :last-child {
+        flex: 1;
+      }
+
+      fieldset {
+        border: 0;
+      }
 
       .formClientLastName {
+        margin: 10px;
         display: flex;
+        flex-direction: column;
       }
 
       .formClientFirstName {
+        margin: 10px;
         display: flex;
+        flex-direction: column;
       }
 
       .formSociety {
+        margin: 10px;
         display: flex;
+        flex-direction: column;
       }
 
       .formPortablePhone {
+        margin: 10px;
         display: flex;
+        flex-direction: column;
       }
 
       .formFixPhone {
+        margin: 10px;
         display: flex;
+        flex-direction: column;
       }
 
       .formRadio {
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
+        margin: 10px;
+      }
+
+      .formNotes {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
       }
 
       .formButton {
-        display: flex;
+        flex: 1;
       }
+
+    }
+
+    .formButton {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      margin: 20px;
+
+
+      button {
+        background-color: white;
+        color: var(--orange);
+        margin: 2rem;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+
+      }
+    }
+
+  }
+  @media screen and (max-width: 500px) {
+    .submit {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (min-width: 501px) {
+    .submit {
+      flex-direction: row;
+      flex: 1;
     }
   }
 }
+
+
+
+
+
+
+
+
+

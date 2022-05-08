@@ -221,42 +221,106 @@ h2 .login-logo .logo-orange-bar {
 }
 
 .newClientForm {
+  background-color: #032f5e;
+  margin-left: 150px;
+  margin-top: 70px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
+  flex: auto;
+  max-width: 650px;
 }
 .newClientForm .formTitle {
-  display: flex;
-  color: #1f80b8;
+  color: var(--orange);
+  width: 100%;
+  text-align: start;
+  margin: 10px 0 20px;
+}
+.newClientForm .formTitle span {
+  background: #fff;
+  padding: 0 10px;
 }
 .newClientForm .submit {
+  color: var(--orange);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 .newClientForm .submit .form-bloc {
   display: flex;
   flex-direction: column;
+  margin: 10px;
+  flex: 1;
+}
+.newClientForm .submit .form-bloc :last-child {
+  flex: 1;
+}
+.newClientForm .submit .form-bloc fieldset {
+  border: 0;
 }
 .newClientForm .submit .form-bloc .formClientLastName {
+  margin: 10px;
   display: flex;
+  flex-direction: column;
 }
 .newClientForm .submit .form-bloc .formClientFirstName {
+  margin: 10px;
   display: flex;
+  flex-direction: column;
 }
 .newClientForm .submit .form-bloc .formSociety {
+  margin: 10px;
   display: flex;
+  flex-direction: column;
 }
 .newClientForm .submit .form-bloc .formPortablePhone {
+  margin: 10px;
   display: flex;
+  flex-direction: column;
 }
 .newClientForm .submit .form-bloc .formFixPhone {
+  margin: 10px;
   display: flex;
+  flex-direction: column;
 }
 .newClientForm .submit .form-bloc .formRadio {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  margin: 10px;
+}
+.newClientForm .submit .form-bloc .formNotes {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
 }
 .newClientForm .submit .form-bloc .formButton {
+  flex: 1;
+}
+.newClientForm .submit .formButton {
   display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+.newClientForm .submit .formButton button {
+  background-color: white;
+  color: var(--orange);
+  margin: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+@media screen and (max-width: 500px) {
+  .newClientForm .submit {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 501px) {
+  .newClientForm .submit {
+    flex-direction: row;
+    flex: 1;
+  }
 }
 
 table {
