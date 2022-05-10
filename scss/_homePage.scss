@@ -93,5 +93,42 @@
 }
 
 
+@media only screen and (max-width: 1000px) {
+    .home-left {
+        .home-left-title {
+            font-size: 1.3rem;
+        }
+    }
+    .home-right{
+        .home-right-title{
+            font-size: 1.3rem;
+        }
+    }
+}
 
+@media only screen and (max-width: 850px) {
+    .home-left {
+        .home-left-title {
+            font-size: 1.1rem;
+        }
+    }
+    .home-right{
+        .home-right-title{
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .home-left {
+        .home-left-title {
+            opacity: 0;
+        }
+    }
+    .home-right{
+        .home-right-title{
+            opacity: 0;
+        }
+    }
+}
 

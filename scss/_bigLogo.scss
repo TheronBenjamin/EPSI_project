@@ -1,0 +1,24 @@
+ .login .login-logo-connection{
+        width: 160px;
+        height: 160px;
+        border-left: 30px solid var(--orange);
+        border-right: 30px solid var(--blue);
+        border-radius: 50%;  
+        margin-top: 1rem;
+        margin-bottom: 1.2rem;
+        .logo-blue-bar{
+            font-size: 4.5rem;
+            color: var(--blue);
+            margin-right: -.5rem;
+        }
+        .logo-orange-bar{
+            font-size: 4.5rem;
+            color: var(--orange);
+            text-shadow: 2px 0px 1px var(--orange);
+        }
+    }
+
+
+
+
+

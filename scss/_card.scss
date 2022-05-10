@@ -1,5 +1,5 @@
 .cards-container{
-  margin:auto;
+  margin: auto;
   width: 70%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -66,14 +66,49 @@
   }
 }
 
-@keyframes test {
-  0%{
-    background-color: var(--dark-blue);
-  }
-  50%{
 
-  }
-  100%{
-    background-color: #0b8804;
+@media only screen and (min-width: 1400px) {
+  .cards-container {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .cards-container {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .card {
+      width: 480px;
+      height: 140px;
+    }
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .cards-container {
+    .card {
+      width: 390px;
+    }
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .cards-container {
+    .card {
+      width: 300px;
+    }
+  }
+}
+
