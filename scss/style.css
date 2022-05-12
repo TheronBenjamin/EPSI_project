@@ -391,6 +391,47 @@ tbody tr:nth-child(odd) {
   background: var(--white);
 }
 
+.container-stat {
+  width: calc(100% - 100px);
+  display: flex;
+  height: 400px;
+  margin-left: 100px;
+}
+
+.box-stat {
+  border: 2px solid #e58910;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.box-stat .scd {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-stat-brut {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.stat-brut {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.stat-brut span {
+  display: block;
+  text-align: center;
+  margin: 10px;
+  padding: 0.5rem;
+  background-color: #ff8b25;
+  color: #081738;
+  font-weight: bold;
+}
+
 .cards-container {
   margin: auto;
   width: 70%;
