@@ -1,0 +1,122 @@
+.search-bar{
+  padding-top: 75px;
+  margin-left: 15%;
+  margin-bottom: .5rem;
+  display: flex;
+  .search-bar-links{
+    a, span{
+      font-size: .9rem;
+      margin-top: .2rem;
+      margin-right: .5rem;
+      padding-bottom: .3rem;
+      color: var(--white);
+      cursor: pointer;
+    }
+    display: flex;
+  }
+  .search-bar-by-name{
+    label {
+      position: relative;
+    }
+
+    label:before {
+      content: "";
+      position: absolute;
+      left: 30px;
+      top: 5px;
+      bottom: 0;
+      width: 15px;
+      height: 10px;
+      background: url("https://svgsilh.com/svg/189254.svg") center / contain no-repeat;
+    }
+    input{
+      height: 25px;
+      width: 300px;
+      margin-left: 1.2rem;
+      padding-left: 28px;
+      outline-color: var(--orange);
+      border: 2px solid var(--hover-blue);
+      border-radius: 4px;
+    }
+  }
+}
+
+.search-bar{
+  a {
+    overflow: hidden;
+    position: relative;
+    display: block;
+  }
+
+  a::before,
+  a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  a::before {
+    background-color: var(--orange);
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+
+  a:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .search-bar{
+    margin-left: 7.5%;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .search-bar {
+    margin-left: 12%;
+    display: block;
+
+    .search-bar-by-name {
+      label:before {
+        left: 10px;
+      }
+
+      input {
+        margin-top: 1.2rem;
+        margin-left: 0rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .search-bar{
+    margin-left: 12%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .search-bar{
+    margin-left: 7%;
+    .search-bar-by-name {
+      input {
+        width: 280px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .search-bar{
+    margin-left: 3%;
+  }
+}
+
+
+

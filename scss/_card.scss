@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
-  padding-top: 80px;
+  padding-top: 30px;
   .card{
     width: 300px;
     height: 120px;
@@ -15,16 +15,18 @@
     transition: transform .3s;
     &:hover{
       transform: translatey(-3px);
-      border: 2px ridge #06f877;
+      border: .12rem ridge #06f877;
       box-shadow: 1px 5px 22px var(--black);
     }
     i{
       color: var(--orange);
       font-size: 1.2rem;
-      cursor: pointer;
     }
     p{
       color: var(--white);
+    }
+    a{
+      cursor: pointer;
     }
   }
 }
@@ -54,10 +56,6 @@
   font-size: .8rem;
   p{
     margin-bottom: .3rem;
-    &:first-child{
-      margin-top: -.6rem;
-      margin-bottom: .8rem;
-    }
     i{
       font-size: .7rem;
       margin-right: .8rem;

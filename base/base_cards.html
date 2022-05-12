@@ -12,7 +12,7 @@
     <!-- Composant barre de navigation -->
     <header>
         <nav class="navbar">
-            <a href="../index.html">
+            <a href="../index.html" title="Accueil">
                 <div class="navbar-logo"></div>
                 <h1 class="navbar-logo-title"><span>O</span>ne Day</h1>
             </a>
@@ -23,43 +23,43 @@
     <!-- Composant Menu -->
     <aside class="aside">
         <div class="bar-link">
-            <a href="#" class="user">
+            <a class="user" title="Votre profil">
                 <i class="fa-solid fa-user-gear"></i>
                 <p class="username">Benjamin</p>
             </a>
         </div>
         <div class="bar-link">
-            <a href="#">
+            <a href="#" title="Administration">
                 <i class="fa-solid fa-user"></i>
                 <p>Administration</p>
             </a>
         </div>
         <div class="bar-link">
-            <a href="#">
+            <a href="#" title="Clients">
                 <i class="fa-solid fa-address-card"></i>
                 <p class="">Clients</p>
             </a>
         </div>
         <div class="bar-link">
-            <a href="#">
+            <a href="#" title="Commandes">
                 <i class="fa-solid fa-cart-shopping"></i>
                 <p>Commandes</p>
             </a>
         </div>
         <div class="bar-link">
-            <a href="#">
+            <a href="#" title="Produits">
                 <i class="fa-brands fa-product-hunt"></i>
                 <p>Produits</p>
             </a>
         </div>
         <div class="bar-link">
-            <a href="#">
+            <a href="#" title="Statistiques">
                 <i class="fa-solid fa-chart-pie"></i>
                 <p>Statistiques</p>
             </a>
         </div>
         <div class="bar-link">
-            <a href="#">
+            <a href="#" title="Deconnexion">
                 <i class="fa-solid fa-share-from-square"></i>
                 <p>Deconnexion</p>
             </a>
@@ -67,13 +67,28 @@
     </aside>
     <!-- Fin composant Menu -->
 
+    <!--search input-->
+    <div class="search-bar">
+        <div class="search-bar-links">
+            <a>Tous</a><span>|</span>
+            <a>Actif</a><span>|</span>
+            <a>Inactif</a>
+        </div>
+
+        <div class="search-bar-by-name">
+            <label for="searchbar"></label>
+            <input id="searchbar" type="text" title="Rechercher" placeholder="Nom du client...">
+        </div>
+    </div>
+    <!--fin search input-->
+
     <!-- Composant card-->
     <div class="cards-container">
         <div class="card">
             <div class="contact-header">
                 <p>Carl Gerard</p>
                 <p class="contact-active">Actif</p>
-                <a href=""><i class="fa-solid fa-pen-to-square"></i></a>
+                <a href=""title="Modifier le client"><i class="fa-solid fa-pen-to-square"></i></a>
             </div>
             <div class="contact-footer">
                 <p><i class="fa-solid fa-briefcase"></i>Capgemini</p>
@@ -85,7 +100,7 @@
             <div class="contact-header">
                 <p>Benjamin Theron</p>
                 <p class="contact-inactif">Inactif</p>
-                <a href=""><i class="fa-solid fa-pen-to-square"></i></a>
+                <a href=""title="Modifier le client"><i class="fa-solid fa-pen-to-square"></i></a>
             </div>
             <div class="contact-footer">
                 <p><i class="fa-solid fa-briefcase"></i>Capgemini</p>
@@ -97,7 +112,79 @@
             <div class="contact-header">
                 <p>Gurvan Mansanarez</p>
                 <p class="contact-active">Actif</p>
-                <a href=""><i class="fa-solid fa-pen-to-square"></i></a>
+                <a href=""title="Modifier le client"><i class="fa-solid fa-pen-to-square"></i></a>
+            </div>
+            <div class="contact-footer">
+                <p><i class="fa-solid fa-briefcase"></i>Capgemini</p>
+                <p><i class="fa-solid fa-envelope"></i>gurvan.mansanarez@capgemini.com</p>
+                <p><i class="fa-solid fa-phone"></i>02 99 88 77 66</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="contact-header">
+                <p>Thomas Girard</p>
+                <p class="contact-active">Actif</p>
+                <a href=""title="Modifier le client"><i class="fa-solid fa-pen-to-square"></i></a>
+            </div>
+            <div class="contact-footer">
+                <p><i class="fa-solid fa-briefcase"></i>Capgemini</p>
+                <p><i class="fa-solid fa-envelope"></i>thomas.girard@capgemini.com</p>
+                <p><i class="fa-solid fa-phone"></i>02 99 88 77 66</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="contact-header">
+                <p>Alexandra Tanguy</p>
+                <p class="contact-inactif">Inactif</p>
+                <a href=""title="Modifier le client"><i class="fa-solid fa-pen-to-square"></i></a>
+            </div>
+            <div class="contact-footer">
+                <p><i class="fa-solid fa-briefcase"></i>Capgemini</p>
+                <p><i class="fa-solid fa-envelope"></i>alexandra.tanguy@capgemini.com</p>
+                <p><i class="fa-solid fa-phone"></i>02 99 88 77 66</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="contact-header">
+                <p>Yann Coadour</p>
+                <p class="contact-active">Actif</p>
+                <a href=""title="Modifier le client"><i class="fa-solid fa-pen-to-square"></i></a>
+            </div>
+            <div class="contact-footer">
+                <p><i class="fa-solid fa-briefcase"></i>Capgemini</p>
+                <p><i class="fa-solid fa-envelope"></i>yann.coadour@capgemini.com</p>
+                <p><i class="fa-solid fa-phone"></i>02 99 88 77 66</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="contact-header">
+                <p>Alexandre Deniel</p>
+                <p class="contact-active">Actif</p>
+                <a href=""title="Modifier le client"><i class="fa-solid fa-pen-to-square"></i></a>
+            </div>
+            <div class="contact-footer">
+                <p><i class="fa-solid fa-briefcase"></i>Capgemini</p>
+                <p><i class="fa-solid fa-envelope"></i>alexandre.deniel@capgemini.com</p>
+                <p><i class="fa-solid fa-phone"></i>02 99 88 77 66</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="contact-header">
+                <p>Arnaud Labarre</p>
+                <p class="contact-inactif">Inactif</p>
+                <a href=""title="Modifier le client"><i class="fa-solid fa-pen-to-square"></i></a>
+            </div>
+            <div class="contact-footer">
+                <p><i class="fa-solid fa-briefcase"></i>Capgemini</p>
+                <p><i class="fa-solid fa-envelope"></i>arnaud.labarre@capgemini.com</p>
+                <p><i class="fa-solid fa-phone"></i>02 99 88 77 66</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="contact-header">
+                <p>Gurvan Mansanarez</p>
+                <p class="contact-active">Actif</p>
+                <a href=""title="Modifier le client"><i class="fa-solid fa-pen-to-square"></i></a>
             </div>
             <div class="contact-footer">
                 <p><i class="fa-solid fa-briefcase"></i>Capgemini</p>
@@ -109,7 +196,7 @@
             <div class="contact-header">
                 <p>Carl Gerard</p>
                 <p class="contact-active">Actif</p>
-                <a href=""><i class="fa-solid fa-pen-to-square"></i></a>
+                <a href=""title="Modifier le client"><i class="fa-solid fa-pen-to-square"></i></a>
             </div>
             <div class="contact-footer">
                 <p><i class="fa-solid fa-briefcase"></i>Capgemini</p>
@@ -121,7 +208,7 @@
             <div class="contact-header">
                 <p>Benjamin Theron</p>
                 <p class="contact-inactif">Inactif</p>
-                <a href=""><i class="fa-solid fa-pen-to-square"></i></a>
+                <a href=""title="Modifier le client"><i class="fa-solid fa-pen-to-square"></i></a>
             </div>
             <div class="contact-footer">
                 <p><i class="fa-solid fa-briefcase"></i>Capgemini</p>
@@ -133,7 +220,7 @@
             <div class="contact-header">
                 <p>Gurvan Mansanarez</p>
                 <p class="contact-active">Actif</p>
-                <a href=""><i class="fa-solid fa-pen-to-square"></i></a>
+                <a href=""title="Modifier le client"><i class="fa-solid fa-pen-to-square"></i></a>
             </div>
             <div class="contact-footer">
                 <p><i class="fa-solid fa-briefcase"></i>Capgemini</p>
@@ -145,7 +232,7 @@
             <div class="contact-header">
                 <p>Carl Gerard</p>
                 <p class="contact-active">Actif</p>
-                <a href=""><i class="fa-solid fa-pen-to-square"></i></a>
+                <a href=""title="Modifier le client"><i class="fa-solid fa-pen-to-square"></i></a>
             </div>
             <div class="contact-footer">
                 <p><i class="fa-solid fa-briefcase"></i>Capgemini</p>
@@ -157,7 +244,7 @@
             <div class="contact-header">
                 <p>Benjamin Theron</p>
                 <p class="contact-inactif">Inactif</p>
-                <a href=""><i class="fa-solid fa-pen-to-square"></i></a>
+                <a href=""title="Modifier le client"><i class="fa-solid fa-pen-to-square"></i></a>
             </div>
             <div class="contact-footer">
                 <p><i class="fa-solid fa-briefcase"></i>Capgemini</p>
@@ -169,7 +256,7 @@
             <div class="contact-header">
                 <p>Gurvan Mansanarez</p>
                 <p class="contact-active">Actif</p>
-                <a href=""><i class="fa-solid fa-pen-to-square"></i></a>
+                <a href=""title="Modifier le client"><i class="fa-solid fa-pen-to-square"></i></a>
             </div>
             <div class="contact-footer">
                 <p><i class="fa-solid fa-briefcase"></i>Capgemini</p>
@@ -181,7 +268,7 @@
             <div class="contact-header">
                 <p>Carl Gerard</p>
                 <p class="contact-active">Actif</p>
-                <a href=""><i class="fa-solid fa-pen-to-square"></i></a>
+                <a href=""title="Modifier le client"><i class="fa-solid fa-pen-to-square"></i></a>
             </div>
             <div class="contact-footer">
                 <p><i class="fa-solid fa-briefcase"></i>Capgemini</p>
@@ -191,9 +278,9 @@
         </div>
         <div class="card">
             <div class="contact-header">
-                <p>Benjamin Theron</p>
+                <p class="name">Benjamin Theron</p>
                 <p class="contact-inactif">Inactif</p>
-                <a href=""><i class="fa-solid fa-pen-to-square"></i></a>
+                <a href=""title="Modifier le client"><i class="fa-solid fa-pen-to-square"></i></a>
             </div>
             <div class="contact-footer">
                 <p><i class="fa-solid fa-briefcase"></i>Capgemini</p>
@@ -205,81 +292,11 @@
             <div class="contact-header">
                 <p>Gurvan Mansanarez</p>
                 <p class="contact-active">Actif</p>
-                <a href=""><i class="fa-solid fa-pen-to-square"></i></a>
+                <p>z</p>
+                <a href=""title="Modifier le client"><i class="fa-solid fa-pen-to-square"></i></a>
             </div>
             <div class="contact-footer">
-                <p><i class="fa-solid fa-briefcase"></i>Capgemini</p>
-                <p><i class="fa-solid fa-envelope"></i>gurvan.mansanarez@capgemini.com</p>
-                <p><i class="fa-solid fa-phone"></i>02 99 88 77 66</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="contact-header">
-                <p>Carl Gerard</p>
-                <p class="contact-active">Actif</p>
-                <a href=""><i class="fa-solid fa-pen-to-square"></i></a>
-            </div>
-            <div class="contact-footer">
-                <p><i class="fa-solid fa-briefcase"></i>Capgemini</p>
-                <p><i class="fa-solid fa-envelope"></i>carl.gerard@capgemini.com</p>
-                <p><i class="fa-solid fa-phone"></i>02 99 88 77 66</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="contact-header">
-                <p>Benjamin Theron</p>
-                <p class="contact-inactif">Inactif</p>
-                <a href=""><i class="fa-solid fa-pen-to-square"></i></a>
-            </div>
-            <div class="contact-footer">
-                <p><i class="fa-solid fa-briefcase"></i>Capgemini</p>
-                <p><i class="fa-solid fa-envelope"></i>benjamin.theron@capgemini.com</p>
-                <p><i class="fa-solid fa-phone"></i>02 99 88 77 66</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="contact-header">
-                <p>Gurvan Mansanarez</p>
-                <p class="contact-active">Actif</p>
-                <a href=""><i class="fa-solid fa-pen-to-square"></i></a>
-            </div>
-            <div class="contact-footer">
-                <p><i class="fa-solid fa-briefcase"></i>Capgemini</p>
-                <p><i class="fa-solid fa-envelope"></i>gurvan.mansanarez@capgemini.com</p>
-                <p><i class="fa-solid fa-phone"></i>02 99 88 77 66</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="contact-header">
-                <p>Carl Gerard</p>
-                <p class="contact-active">Actif</p>
-                <a href=""><i class="fa-solid fa-pen-to-square"></i></a>
-            </div>
-            <div class="contact-footer">
-                <p><i class="fa-solid fa-briefcase"></i>Capgemini</p>
-                <p><i class="fa-solid fa-envelope"></i>carl.gerard@capgemini.com</p>
-                <p><i class="fa-solid fa-phone"></i>02 99 88 77 66</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="contact-header">
-                <p>Benjamin Theron</p>
-                <p class="contact-inactif">Inactif</p>
-                <a href=""><i class="fa-solid fa-pen-to-square"></i></a>
-            </div>
-            <div class="contact-footer">
-                <p><i class="fa-solid fa-briefcase"></i>Capgemini</p>
-                <p><i class="fa-solid fa-envelope"></i>benjamin.theron@capgemini.com</p>
-                <p><i class="fa-solid fa-phone"></i>02 99 88 77 66</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="contact-header">
-                <p>Gurvan Mansanarez</p>
-                <p class="contact-active">Actif</p>
-                <a href=""><i class="fa-solid fa-pen-to-square"></i></a>
-            </div>
-            <div class="contact-footer">
+                <p>b</p>
                 <p><i class="fa-solid fa-briefcase"></i>Capgemini</p>
                 <p><i class="fa-solid fa-envelope"></i>gurvan.mansanarez@capgemini.com</p>
                 <p><i class="fa-solid fa-phone"></i>02 99 88 77 66</p>
@@ -287,7 +304,24 @@
         </div>
     </div>
     <!--Fin Composant card-->
-
+    <script>
+        const input = document.getElementById("searchbar");
+        input.addEventListener('input', filterList)
+        function filterList(){
+            filter = input.value.toLowerCase()
+            let cards = document.querySelectorAll(".card");
+            cards.forEach(card => {
+                //Permet de récupérer les éléments situés dans le contact header
+                // puis le premier élément <p> de cette liste qui contient le nom de client
+                let name = card.firstElementChild.firstElementChild.textContent
+                if(name.toLowerCase().includes(filter)){
+                    card.style.display = "block"
+                } else {
+                    card.style.display = "none"
+                }
+            })
+        }
+    </script>
     <script src="../menu.js"></script>
 </body>
 </html>

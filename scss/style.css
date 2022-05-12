@@ -190,8 +190,8 @@
   }
 }
 .login .login-logo-connection {
-  width: 160px;
-  height: 160px;
+  width: 150px;
+  height: 150px;
   border-left: 30px solid var(--orange);
   border-right: 30px solid var(--blue);
   border-radius: 50%;
@@ -396,7 +396,7 @@ tbody tr:nth-child(odd) {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
-  padding-top: 80px;
+  padding-top: 30px;
 }
 .cards-container .card {
   width: 300px;
@@ -409,16 +409,18 @@ tbody tr:nth-child(odd) {
 }
 .cards-container .card:hover {
   transform: translatey(-3px);
-  border: 2px ridge #06f877;
+  border: 0.12rem ridge #06f877;
   box-shadow: 1px 5px 22px var(--black);
 }
 .cards-container .card i {
   color: var(--orange);
   font-size: 1.2rem;
-  cursor: pointer;
 }
 .cards-container .card p {
   color: var(--white);
+}
+.cards-container .card a {
+  cursor: pointer;
 }
 
 .cards-container .card .contact-header {
@@ -448,10 +450,6 @@ tbody tr:nth-child(odd) {
 }
 .cards-container .card .contact-footer p {
   margin-bottom: 0.3rem;
-}
-.cards-container .card .contact-footer p:first-child {
-  margin-top: -0.6rem;
-  margin-bottom: 0.8rem;
 }
 .cards-container .card .contact-footer p i {
   font-size: 0.7rem;
@@ -592,6 +590,107 @@ tbody tr:nth-child(odd) {
 @media only screen and (max-width: 768px) {
   .aside {
     display: none;
+  }
+}
+.search-bar {
+  padding-top: 75px;
+  margin-left: 15%;
+  margin-bottom: 0.5rem;
+  display: flex;
+}
+.search-bar .search-bar-links {
+  display: flex;
+}
+.search-bar .search-bar-links a, .search-bar .search-bar-links span {
+  font-size: 0.9rem;
+  margin-top: 0.2rem;
+  margin-right: 0.5rem;
+  padding-bottom: 0.3rem;
+  color: var(--white);
+  cursor: pointer;
+}
+.search-bar .search-bar-by-name label {
+  position: relative;
+}
+.search-bar .search-bar-by-name label:before {
+  content: "";
+  position: absolute;
+  left: 30px;
+  top: 5px;
+  bottom: 0;
+  width: 15px;
+  height: 10px;
+  background: url("https://svgsilh.com/svg/189254.svg") center/contain no-repeat;
+}
+.search-bar .search-bar-by-name input {
+  height: 25px;
+  width: 300px;
+  margin-left: 1.2rem;
+  padding-left: 28px;
+  outline-color: var(--orange);
+  border: 2px solid var(--hover-blue);
+  border-radius: 4px;
+}
+
+.search-bar a {
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+.search-bar a::before,
+.search-bar a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.search-bar a::before {
+  background-color: var(--orange);
+  height: 2px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.search-bar a:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+
+@media only screen and (max-width: 768px) {
+  .search-bar {
+    margin-left: 7.5%;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .search-bar {
+    margin-left: 12%;
+    display: block;
+  }
+  .search-bar .search-bar-by-name label:before {
+    left: 10px;
+  }
+  .search-bar .search-bar-by-name input {
+    margin-top: 1.2rem;
+    margin-left: 0rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .search-bar {
+    margin-left: 12%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .search-bar {
+    margin-left: 7%;
+  }
+  .search-bar .search-bar-by-name input {
+    width: 280px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .search-bar {
+    margin-left: 3%;
   }
 }
 * {
