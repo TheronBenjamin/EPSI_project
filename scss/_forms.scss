@@ -6,41 +6,35 @@
   margin-top: 70px;
   padding: 20px;
   display: flex;
-  flex-direction: column;
   flex: 1;
-
   .form-title {
     color: var(--orange);
+    display: flex;
     width: 100%;
     text-align: start;
-    margin: 10px 0 20px;
   }
-
   .form-title span {
     background: #fff;
-    padding: 0 10px;
   }
-
   .form {
     color: var(--orange);
+  .form-title{
     display: flex;
-    flex-direction: row;
-    justify-items: start;
-
+      }
+    .bloc{
+      display: flex;
+    }
     .form-bloc {
       display: flex;
       flex-direction: column;
       margin: 10px;
       flex: 1;
-
       :last-child {
         flex: 1;
       }
-
       fieldset {
         border: 0;
       }
-
       .form-line {
         margin: 10px;
         display: flex;
@@ -50,53 +44,40 @@
           margin-top: 5px;
         }
       }
-
       .form-radio {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         margin: 5px;
       }
-
       input[type="radio"] {
         margin: 0 0 0 10px;
       }
-
       .form-notes {
         display: flex;
         flex-direction: column;
         margin: 10px;
       }
-
       textarea[name="notes"] {
         resize: none;
       }
-
       .form-button {
         flex: 1;
       }
-
     }
-
     .form-button {
       display: flex;
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
-      justify-content: center;
-      margin: 20px;
-
+      margin-top: -0.8rem;
+      justify-content: end;
       button {
         background-color: white;
         color: var(--orange);
-        margin: 2rem;
+        margin-right: 2rem;
         padding: 0.5rem 1rem;
         border-radius: 4px;
         cursor: pointer;
-
       }
     }
-
   }
 
   @media screen and (max-width: 500px) {

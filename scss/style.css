@@ -274,24 +274,25 @@ h2 .login-logo .logo-orange-bar {
   margin-top: 70px;
   padding: 20px;
   display: flex;
-  flex-direction: column;
   flex: 1;
 }
 .section-form .form-title {
   color: var(--orange);
+  display: flex;
   width: 100%;
   text-align: start;
-  margin: 10px 0 20px;
 }
 .section-form .form-title span {
   background: #fff;
-  padding: 0 10px;
 }
 .section-form .form {
   color: var(--orange);
+}
+.section-form .form .form-title {
   display: flex;
-  flex-direction: row;
-  justify-items: start;
+}
+.section-form .form .bloc {
+  display: flex;
 }
 .section-form .form .form-bloc {
   display: flex;
@@ -335,16 +336,13 @@ h2 .login-logo .logo-orange-bar {
 }
 .section-form .form .form-button {
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin: 20px;
+  margin-top: -0.8rem;
+  justify-content: end;
 }
 .section-form .form .form-button button {
   background-color: white;
   color: var(--orange);
-  margin: 2rem;
+  margin-right: 2rem;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   cursor: pointer;

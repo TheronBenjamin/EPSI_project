@@ -68,8 +68,15 @@
     <!-- Fin composant Menu -->
     <!-- Début Formulaire Nouveau CLient -->
     <section class="section-form">
-        <h1 class="form-title">Nouveau Client</h1>
         <form class="form" method="POST" action="#">
+            <div class="title-bloc">
+                <h1 class="form-title">Nouveau Client</h1>
+                <div class="form-button">
+                    <button id="add-button" type="submit">Ajouter</button>
+                    <button id="cancel" type="button">Annuler</button>
+                </div>
+            </div>
+            <div class="bloc">
             <div class="form-bloc">
                 <div class="form-line">
                     <label for="client-last-name">Nom du client</label>
@@ -115,10 +122,6 @@
                     <textarea id="notes" name="notes"></textarea>
                 </div>
             </div>
-
-            <div class="form-button">
-                <button id="add-button" type="submit">Ajouter</button>
-                <button id="cancel" type="button">Annuler</button>
             </div>
         </form>
         <!-- End Formulaire Nouveau Client -->
