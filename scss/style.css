@@ -638,10 +638,13 @@ tbody tr:nth-child(odd) {
   margin-bottom: 0.5rem;
   display: flex;
 }
-.search-bar .search-bar-links {
+.search-bar .search-container {
   display: flex;
 }
-.search-bar .search-bar-links a, .search-bar .search-bar-links span {
+.search-bar .search-container .search-bar-links {
+  display: flex;
+}
+.search-bar .search-container .search-bar-links .sorting-link, .search-bar .search-container .search-bar-links span {
   font-size: 0.9rem;
   margin-top: 0.2rem;
   margin-right: 0.5rem;
@@ -649,10 +652,10 @@ tbody tr:nth-child(odd) {
   color: var(--white);
   cursor: pointer;
 }
-.search-bar .search-bar-by-name label {
+.search-bar .search-container .search-bar-by-name label {
   position: relative;
 }
-.search-bar .search-bar-by-name label:before {
+.search-bar .search-container .search-bar-by-name label:before {
   content: "";
   position: absolute;
   left: 30px;
@@ -662,7 +665,7 @@ tbody tr:nth-child(odd) {
   height: 10px;
   background: url("https://svgsilh.com/svg/189254.svg") center/contain no-repeat;
 }
-.search-bar .search-bar-by-name input {
+.search-bar .search-container .search-bar-by-name input {
   height: 25px;
   width: 300px;
   margin-left: 1.2rem;
@@ -671,20 +674,41 @@ tbody tr:nth-child(odd) {
   border: 2px solid var(--hover-blue);
   border-radius: 4px;
 }
+.search-bar .adding-link {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  background-color: #16930f;
+  color: var(--white);
+  font-size: 0.85rem;
+  text-align: center;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+.search-bar .adding-link:hover {
+  background-color: #149f11;
+  transform: translateY(-0.11rem);
+  box-shadow: 2px 7px 20px var(--extreme-dark-blue);
+}
+.search-bar .adding-link i {
+  margin-right: 0.4rem;
+}
 
-.search-bar a {
+.search-bar .sorting-link {
   overflow: hidden;
   position: relative;
   display: block;
 }
-.search-bar a::before,
-.search-bar a::after {
+.search-bar .sorting-link::before,
+.search-bar .sorting-link::after {
   content: "";
   position: absolute;
   width: 100%;
   left: 0;
 }
-.search-bar a::before {
+.search-bar .sorting-link::before {
   background-color: var(--orange);
   height: 2px;
   bottom: 0;
@@ -692,7 +716,7 @@ tbody tr:nth-child(odd) {
   transform: scaleX(0);
   transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
 }
-.search-bar a:hover::before {
+.search-bar .sorting-link:hover::before {
   transform-origin: 0% 50%;
   transform: scaleX(1);
 }
@@ -700,18 +724,24 @@ tbody tr:nth-child(odd) {
 @media only screen and (max-width: 768px) {
   .search-bar {
     margin-left: 7.5%;
+    flex-direction: column;
+  }
+  .search-bar .adding-link {
+    margin: 1.2rem 0rem -1rem 0rem;
   }
 }
 @media only screen and (max-width: 570px) {
   .search-bar {
     margin-left: 12%;
+  }
+  .search-bar .search-container {
     display: block;
   }
-  .search-bar .search-bar-by-name label:before {
+  .search-bar .search-container .search-bar-by-name label:before {
     left: 10px;
   }
-  .search-bar .search-bar-by-name input {
-    margin-top: 1.2rem;
+  .search-bar .search-container .search-bar-by-name input {
+    margin-top: 0.7rem;
     margin-left: 0rem;
   }
 }

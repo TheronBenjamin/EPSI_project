@@ -1,61 +1,85 @@
 .search-bar{
   padding-top: 75px;
-  margin-left: 15%;
+  margin-left:  15%;
   margin-bottom: .5rem;
   display: flex;
-  .search-bar-links{
-    a, span{
-      font-size: .9rem;
-      margin-top: .2rem;
-      margin-right: .5rem;
-      padding-bottom: .3rem;
-      color: var(--white);
-      cursor: pointer;
-    }
+  .search-container{
     display: flex;
-  }
-  .search-bar-by-name{
-    label {
-      position: relative;
+    .search-bar-links{
+      display: flex;
+      .sorting-link, span{
+        font-size: .9rem;
+        margin-top: .2rem;
+        margin-right: .5rem;
+        padding-bottom: .3rem;
+        color: var(--white);
+        cursor: pointer;
+      }
     }
+    .search-bar-by-name{
+      label {
+        position: relative;
+      }
 
-    label:before {
-      content: "";
-      position: absolute;
-      left: 30px;
-      top: 5px;
-      bottom: 0;
-      width: 15px;
-      height: 10px;
-      background: url("https://svgsilh.com/svg/189254.svg") center / contain no-repeat;
+      label:before {
+        content: "";
+        position: absolute;
+        left: 30px;
+        top: 5px;
+        bottom: 0;
+        width: 15px;
+        height: 10px;
+        background: url("https://svgsilh.com/svg/189254.svg") center / contain no-repeat;
+      }
+      input{
+        height: 25px;
+        width: 300px;
+        margin-left: 1.2rem;
+        padding-left: 28px;
+        outline-color: var(--orange);
+        border: 2px solid var(--hover-blue);
+        border-radius: 4px;
+      }
     }
-    input{
-      height: 25px;
-      width: 300px;
-      margin-left: 1.2rem;
-      padding-left: 28px;
-      outline-color: var(--orange);
-      border: 2px solid var(--hover-blue);
-      border-radius: 4px;
+  }
+  .adding-link{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    background-color: #16930f;
+    color: var(--white);
+    font-size: .85rem;
+    text-align: center;
+    border-radius: 4px;
+    transition: all .3s;
+    &:hover{
+      background-color: #149f11;
+      transform: translateY(-.11rem);
+      box-shadow: 2px 7px 20px var(--extreme-dark-blue);
+    }
+    i{
+      margin-right: .4rem;
     }
   }
 }
 
 .search-bar{
-  a {
+  .sorting-link{
     overflow: hidden;
     position: relative;
     display: block;
   }
 
-  a::before,
-  a::after {
+  .sorting-link::before,
+  .sorting-link::after {
     content: '';
     position: absolute;
     width: 100%;
     left: 0;
   }
-  a::before {
+  .sorting-link::before {
     background-color: var(--orange);
     height: 2px;
     bottom: 0;
@@ -64,7 +88,7 @@
     transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
   }
 
-  a:hover::before {
+  .sorting-link:hover::before {
     transform-origin: 0% 50%;
     transform: scaleX(1);
   }
@@ -74,22 +98,26 @@
 @media only screen and (max-width: 768px) {
   .search-bar{
     margin-left: 7.5%;
+    flex-direction: column;
+    .adding-link{
+      margin: 1.2rem 0rem -1rem 0rem;
+    }
   }
 }
 
 @media only screen and (max-width: 570px) {
   .search-bar {
     margin-left: 12%;
-    display: block;
-
-    .search-bar-by-name {
-      label:before {
-        left: 10px;
-      }
-
-      input {
-        margin-top: 1.2rem;
-        margin-left: 0rem;
+    .search-container{
+      display: block;
+      .search-bar-by-name {
+        label:before {
+          left: 10px;
+        }
+        input {
+          margin-top: .7rem;
+          margin-left: 0rem;
+        }
       }
     }
   }

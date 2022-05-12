@@ -69,16 +69,19 @@
 
     <!--search input-->
     <div class="search-bar">
-        <div class="search-bar-links">
-            <a>Tous</a><span>|</span>
-            <a>Actif</a><span>|</span>
-            <a>Inactif</a>
-        </div>
+        <div class="search-container">
+            <div class="search-bar-links">
+                <a class="sorting-link">Tous</a><span>|</span>
+                <a class="sorting-link">Actif</a><span>|</span>
+                <a class="sorting-link">Inactif</a>
+            </div>
 
-        <div class="search-bar-by-name">
-            <label for="searchbar"></label>
-            <input id="searchbar" type="text" title="Rechercher" placeholder="Nom du client...">
+            <div class="search-bar-by-name">
+                <label for="searchbar"></label>
+                <input id="searchbar" type="text" title="Rechercher" placeholder="Nom du client...">
+            </div>
         </div>
+        <a href="base_forms.html" class="adding-link"><i class="fa-solid fa-plus"></i>Ajouter un client</a>
     </div>
     <!--fin search input-->
 
@@ -292,11 +295,9 @@
             <div class="contact-header">
                 <p>Gurvan Mansanarez</p>
                 <p class="contact-active">Actif</p>
-                <p>z</p>
                 <a href=""title="Modifier le client"><i class="fa-solid fa-pen-to-square"></i></a>
             </div>
             <div class="contact-footer">
-                <p>b</p>
                 <p><i class="fa-solid fa-briefcase"></i>Capgemini</p>
                 <p><i class="fa-solid fa-envelope"></i>gurvan.mansanarez@capgemini.com</p>
                 <p><i class="fa-solid fa-phone"></i>02 99 88 77 66</p>
@@ -304,24 +305,7 @@
         </div>
     </div>
     <!--Fin Composant card-->
-    <script>
-        const input = document.getElementById("searchbar");
-        input.addEventListener('input', filterList)
-        function filterList(){
-            filter = input.value.toLowerCase()
-            let cards = document.querySelectorAll(".card");
-            cards.forEach(card => {
-                //Permet de récupérer les éléments situés dans le contact header
-                // puis le premier élément <p> de cette liste qui contient le nom de client
-                let name = card.firstElementChild.firstElementChild.textContent
-                if(name.toLowerCase().includes(filter)){
-                    card.style.display = "block"
-                } else {
-                    card.style.display = "none"
-                }
-            })
-        }
-    </script>
+    <script src="../searchbar.js"></script>
     <script src="../menu.js"></script>
 </body>
 </html>
