@@ -347,6 +347,7 @@ h2 .login-logo .logo-orange-bar {
   margin: 2rem;
   padding: 0.5rem 1rem;
   border-radius: 4px;
+  cursor: pointer;
 }
 @media screen and (max-width: 500px) {
   .section-form .form {
