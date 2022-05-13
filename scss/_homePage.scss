@@ -4,7 +4,6 @@
 .home-left{
     background: var(--orange) 100%;
     width: 0vw;
-    //taille navabar 30px
     height: 100vh;
     display: flex;
     align-items: center;
@@ -96,12 +95,12 @@
 @media only screen and (max-width: 1000px) {
     .home-left {
         .home-left-title {
-            font-size: 1.3rem;
+            font-size: var(--h2-font-size-medium);
         }
     }
     .home-right{
         .home-right-title{
-            font-size: 1.3rem;
+            font-size: var(--h2-font-size-medium);
         }
     }
 }
@@ -109,12 +108,12 @@
 @media only screen and (max-width: 850px) {
     .home-left {
         .home-left-title {
-            font-size: 1.1rem;
+            font-size: var(--h2-font-size-min);
         }
     }
     .home-right{
         .home-right-title{
-            font-size: 1.1rem;
+            font-size: var(--h2-font-size-min);
         }
     }
 }
