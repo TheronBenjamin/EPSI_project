@@ -15,7 +15,7 @@
     transition: transform .3s;
     &:hover{
       transform: translatey(-3px);
-      border: .12rem ridge #06f877;
+      border: .12rem ridge var(--flashy-green);
       box-shadow: 1px 5px 22px var(--black);
     }
     i{
@@ -35,10 +35,10 @@
   display: flex;
   justify-content: space-between;
   padding: .8rem 1.2rem;
-  color: #081738;
+  color: var(--dark-blue);
   font-size: .95rem;
   .contact-active, .contact-inactif{
-    background-color: #0b8804;
+    background-color: var(--dark-green);
     font-weight: 400;
     color: var(--white);
     font-size: .8rem;
@@ -47,7 +47,7 @@
     border-radius: 20px;
   }
   .contact-inactif{
-    background-color: #a40303;
+    background-color: var(--dark-red);
   }
 }
 .cards-container .card .contact-footer{
@@ -59,7 +59,7 @@
     i{
       font-size: .7rem;
       margin-right: .8rem;
-      color : #0fcc3c;
+      color : var(--light-green);
     }
   }
 }

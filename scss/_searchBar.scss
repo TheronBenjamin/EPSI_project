@@ -48,14 +48,14 @@
     justify-content: center;
     align-items: center;
     margin-left: 2rem;
-    background-color: #16930f;
+    background-color: var(--green);
     color: var(--white);
     font-size: .85rem;
     text-align: center;
     border-radius: 4px;
     transition: all .3s;
     &:hover{
-      background-color: #149f11;
+      background-color: var(--middle-green);
       transform: translateY(-.11rem);
       box-shadow: 2px 7px 20px var(--extreme-dark-blue);
     }
