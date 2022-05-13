@@ -4,6 +4,8 @@
   --body-font:"Roboto", sans-serif;
   --h1-font-size: 2.3rem;
   --h2-font-size: 2.2rem;
+  --h2-font-size-medium: 1.3rem;
+  --h2-font-size-min: 1.1rem;
   --text-shadow: 1px 1px 1px rgba(255,255,255,.5);
   --white: white;
   --grey: #6e6e6e;
@@ -171,20 +173,20 @@
 
 @media only screen and (max-width: 1000px) {
   .home-left .home-left-title {
-    font-size: 1.3rem;
+    font-size: var(--h2-font-size-medium);
   }
 
   .home-right .home-right-title {
-    font-size: 1.3rem;
+    font-size: var(--h2-font-size-medium);
   }
 }
 @media only screen and (max-width: 850px) {
   .home-left .home-left-title {
-    font-size: 1.1rem;
+    font-size: var(--h2-font-size-min);
   }
 
   .home-right .home-right-title {
-    font-size: 1.1rem;
+    font-size: var(--h2-font-size-min);
   }
 }
 @media only screen and (max-width: 768px) {
@@ -275,7 +277,7 @@ h2 .login-logo .logo-orange-bar {
 }
 
 .section-form {
-  background-color: #032f5e;
+  background-color: var(--middle-blue);
   margin-left: 30px;
   margin-right: 30px;
   margin-top: 70px;
@@ -342,14 +344,6 @@ h2 .login-logo .logo-orange-bar {
   margin-top: -0.8rem;
   justify-content: flex-end;
 }
-.section-form .form .form-button button {
-  background-color: white;
-  color: var(--orange);
-  margin-right: 2rem;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-}
 .section-form .form button {
   background-color: white;
   color: var(--orange);
@@ -380,7 +374,7 @@ h2 .login-logo .logo-orange-bar {
     justify-content: center;
     margin-left: 2rem;
   }
-  .section-form .form .form-button-small-screen button {
+  .section-form .form .form-button-small-screen .button-small-screen {
     width: 100px;
   }
   .section-form .form .form-button {
@@ -469,6 +463,9 @@ tbody tr:nth-child(odd) {
   background-color: #ff8b25;
   color: #081738;
   font-weight: bold;
+}
+.stat-brut p {
+  text-align: center;
 }
 
 .cards-container {
@@ -603,7 +600,7 @@ tbody tr:nth-child(odd) {
   text-shadow: 0px 0px 0px var(--dark-blue);
 }
 .aside a i {
-  padding: 1.9rem 0rem;
+  padding: 1.6rem 0rem;
   margin-bottom: 0.2rem;
   font-size: 1.5rem;
   height: 50px;

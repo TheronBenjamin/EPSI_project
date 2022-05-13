@@ -1,6 +1,6 @@
 
 .section-form {
-  background-color: #032f5e;
+  background-color: var(--middle-blue);
   margin-left: 30px;
   margin-right: 30px;
   margin-top: 70px;
@@ -64,14 +64,6 @@
       display: flex;
       margin-top: -0.8rem;
       justify-content: flex-end;
-      button {
-        background-color: white;
-        color: var(--orange);
-        margin-right: 2rem;
-        padding: 0.5rem 1rem;
-        border-radius: 4px;
-        cursor: pointer;
-      }
     }
     button {
       background-color: white;
@@ -105,7 +97,7 @@
         display: flex;
         justify-content: center;
         margin-left: 2rem;
-        button{
+        .button-small-screen{
           width:100px;
         }
       }
